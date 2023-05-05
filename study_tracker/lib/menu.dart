@@ -47,7 +47,7 @@ class MyHomePage extends StatelessWidget {
                 shrinkWrap: true,
                 children: <Widget>[
                   Material(
-                    color: Colors.green,
+                    color: const Color.fromARGB(255, 101, 76, 175),
                     child: InkWell( // Area responsive terhadap sentuhan
                       onTap: () {
                         // Memunculkan SnackBar ketika diklik
@@ -69,7 +69,7 @@ class MyHomePage extends StatelessWidget {
                               ),
                               Padding(padding: EdgeInsets.all(3)),
                               Text(
-                                "Lihat Riwayat Tugas",
+                                "Lihat Study Tracker",
                                 textAlign: TextAlign.center,
                                 style: TextStyle(color: Colors.white),
                               ),
@@ -80,7 +80,7 @@ class MyHomePage extends StatelessWidget {
                     ),
                   ),
                   Material(
-                    color: Colors.green,
+                    color: const Color.fromARGB(255, 252, 43, 1), 
                     child: InkWell(
                       onTap: () {
                         ScaffoldMessenger.of(context)
@@ -112,7 +112,7 @@ class MyHomePage extends StatelessWidget {
                     ),
                   ),
                   Material(
-                    color: Colors.green,
+                    color: const Color.fromARGB(255, 239, 4, 114),
                     child: InkWell(
                       onTap: () {
                         ScaffoldMessenger.of(context)
