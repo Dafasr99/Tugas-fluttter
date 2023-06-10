@@ -14,7 +14,7 @@ class AssignmentPage extends StatefulWidget {
 
 class _AssignmentPageState extends State<AssignmentPage> {
   Future<List<Assignment>> fetchAssignment() async {
-    var url = Uri.parse('http://127.0.0.1:8000/study-tracker/json/');
+    var url = Uri.parse('https://study-tracker.domcloud.io/study-tracker/json/');
     var client = http.Client();
     var response = await client.get(url, headers: {
       "Content-Type": "application/json",

@@ -127,7 +127,7 @@ class MyHomePage extends StatelessWidget {
                       onTap: () async {
                         final response = await request.logout(
                           // TODO: Ganti URL dan jangan lupa tambahkan trailing slash (/) di akhir URL!
-                          "https://webbed-energy-zoa.domcloud.io/auth/logout/");
+                          "https://study-tracker.domcloud.io/auth/logout/");
                           String message = response["message"];
                           if (response['status']) {
                               String uname = response["username"];

@@ -19,7 +19,7 @@ class _DetailPageState extends State<DetailPage> {
     final int pk = widget.pk;
     // TODO: Ganti URL dan jangan lupa tambahkan trailing slash (/) di akhir URL!
     var url = Uri.parse(
-        'http://127.0.0.1:8000/study-tracker/json/${pk}');
+        'https://study-tracker.domcloud.io/study-tracker/json/${pk}');
     var response = await http.get(
         url,
         headers: {
