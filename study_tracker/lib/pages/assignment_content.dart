@@ -19,11 +19,10 @@ class _DetailPageState extends State<DetailPage> {
     final int pk = widget.pk;
     // TODO: Ganti URL dan jangan lupa tambahkan trailing slash (/) di akhir URL!
     var url = Uri.parse(
-        'https://webbed-energy-zoa.domcloud.io/tracker/json/${pk}');
+        'http://127.0.0.1:8000/study-tracker/json/${pk}');
     var response = await http.get(
         url,
         headers: {
-            "Access-Control-Allow-Origin": "*",
             "Content-Type": "application/json",
         },
     );
